@@ -5,7 +5,21 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-//Functions
+/**
+ * struct check - definition of structure
+ *
+ * @fmt : format specifier
+ *
+ * @fn : function associated
+ */
+struct checker
+{
+	char fmt;
+	int (*fn)(va_list);
+};
+typedef struct checker
+
+//Functions - Prototypes
 int _printf(const char *format, ...);
 
 #endif
